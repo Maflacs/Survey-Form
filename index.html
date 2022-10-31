@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <fieldset>
+        <form id="survey-form" name="survey-form" action="'https://register-demo.freecodecamp.org'">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this form with the required information</p>
+            <label for="name-label" id="name-label">Enter Your Name: <input class="area" type="text" name="name" id="name" placeholder="Your name" required></label>
+            <label for="email-label" id="email-label">Enter Your e-mail: <input class="area" type="email" name="email" id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email" required></label>
+            <label for="number-label" id="number-label">Enter Your Age: <input class="area" type="number" name="number" id="number" pattern="[0-9]" min="0" max="100"
+                    placeholder="Your age"></label>
+            <label for="dropdown"><h2>What is Your gender?</h2>
+                <select name="gender" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">male</option>
+                    <option value="2">female</option>
+                </select>
+            </label>
+            <label for="married"><h2>What is Your marital status?</h2><input id="married" type="radio" name="marital status" value="1" /> married</label>
+            <label for="single"><input id="single" type="radio" name="marital status" value="2"/> single</label>
+            <h2>What is your education?</h2>
+            <label for="children"><input type="checkbox" name="children" id="children" value="0"> primary schools</label>
+            <label for="children"><input type="checkbox" name="children" id="children"
+                    value="1"> proffesional training</label>
+            <label for="children"><input type="checkbox" name="children" id="children" value="2"> graduation</label>
+            <label for="children"><input type="checkbox" name="children" id="children" value="more"> more</label>
+            <label for="bio">Provide a bio:<br>
+                <textarea class="area" id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea><br>
+                <input class="button" id="submit" type="submit" name="bio" value="Submit" />
+        </form>
+    </fieldset>
+</body>
+
+</html>
